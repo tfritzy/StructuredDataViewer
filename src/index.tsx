@@ -10,3 +10,8 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+function imageClick() {
+  const htmlBlob = <div id="root" className="circleBase type1" onClick={imageClick}></div>;
+  ReactDOM.render(htmlBlob, document.getElementById('root'));
+}
